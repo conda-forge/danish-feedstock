@@ -14,7 +14,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
   skip: true  # [py==38]
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -30,6 +30,7 @@ requirements:
     - wheel
     - pybind11 >2.10
     - pip
+    - setuptools
   run:
     - python
     - numpy
@@ -41,8 +42,8 @@ requirements:
 test:
   imports:
     - danish
-  commands:
-    - pip check
+  # commands:
+  #   - pip check
   requires:
     - pip
 

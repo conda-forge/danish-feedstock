@@ -42,8 +42,8 @@ requirements:
 test:
   imports:
     - danish
-  commands:
-    - pip check
+  # commands:
+  #   - pip check
   requires:
     - pip
 

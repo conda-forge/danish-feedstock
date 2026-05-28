@@ -1,5 +1,5 @@
 {% set name = "danish" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/danish-{{ version }}.tar.gz
-  sha256: 825e840fc2a0ba78eb794cec99d656d4b0301ecefe9343f8ce9495f16fea9b9a
+  sha256: bc081c1ffa5a79b5371f2c99203a714b07f29ae208c899915dca11d59159fee1
 
 build:
   skip: true  # [py<38 or win]

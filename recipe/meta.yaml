@@ -14,7 +14,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
   skip: true  # [py==38]
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -27,10 +27,10 @@ requirements:
   host:
     - python
     - setuptools >=42
+    - setuptools-scm
     - wheel
     - pybind11 >2.10
     - pip
-    - setuptools
   run:
     - python
     - numpy

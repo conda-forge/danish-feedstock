@@ -6,13 +6,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/danish-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/danish-{{ version }}.tar.gz
   sha256: fb42cf41c6fb8329cad2c0713e9cf929de04a56bce87defdbd9ce54f16035b10
 
 build:
   skip: true  # [py<39 or win]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   build:

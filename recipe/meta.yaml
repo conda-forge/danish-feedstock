@@ -1,5 +1,5 @@
 {% set name = "danish" %}
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/danish-{{ version }}.tar.gz
-  sha256: fb42cf41c6fb8329cad2c0713e9cf929de04a56bce87defdbd9ce54f16035b10
+  sha256: 30c299efc457aa42ef3f1966ce04e82ab1578fc033dcd3f698055e4388a65161
 
 build:
   skip: true  # [py<39 or win]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   build:
